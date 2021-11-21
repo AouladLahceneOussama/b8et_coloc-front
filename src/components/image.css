@@ -1,0 +1,71 @@
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 180px;
+  height:auto;
+  margin-right: 20px;
+ 
+  text-align: "center";
+margin-bottom: 10px;
+
+  
+  
+ 
+ 
+}
+
+.image {
+  display: block;
+  width: 150px;
+  height: 160px;
+}
+
+.overlay {
+  position: absolute; 
+ 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 160px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay_image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  
+ 
+}
+
+.container:hover .overlay_image {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}

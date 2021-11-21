@@ -1,0 +1,29 @@
+.container-upmenu{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 0 0 30px 0;
+    box-shadow: 3px -10px 15px rgba(150,150,150,0.38);
+    background-color: white;
+}
+
+.container-upmenu i{
+    color: #4ACC64;
+    cursor: pointer;
+}
+
+.menu-icon{
+    font-size: 20px;
+    color: #4ACC64;
+    display: none;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-icon {
+      display: initial;
+    }
+}

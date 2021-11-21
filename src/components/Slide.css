@@ -1,0 +1,115 @@
+.containerSlide {
+    width: 150px;
+    height:auto;
+  
+    position: relative;
+}
+
+.containerSlide img {
+  display: block;
+  width: 150px;
+  height: 160px;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 150px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    
+    
+  }
+  
+  .containerSlide:hover .overlay {
+    opacity: 1;
+  }
+
+  .input-hidden {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  input[type=radio]:checked + label>img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px 3px #090;
+  }
+  
+  /* Stuff after this is only to make things more pretty */
+  input[type=radio] + label>img {
+    border: 1px dashed #444;
+    width: 150px;
+    height: 150px;
+    transition: 500ms all;
+  }
+  
+  input[type=radio]:checked + label>img {
+    transform: 
+      rotateZ(-10deg) 
+      rotateX(10deg);
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay_image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(207, 201, 201);
+   
+  }
+  
+  .container:hover .overlay_image {
+    opacity: 1;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+ 
+  .custom-dot1{
+    position: relative;
+    top: -  100px;
+    z-index: 10;
+    color: gray;
+    font-size: 5px;
+    transition: .3s ease-in-out;
+  }
+  
+  li.slick-active .custom-dot1, .custom-dot1:hover{
+    font-size: 8px;
+    color: #4ACC64;
+  }
+  
+  .cunstom-dot1-active{
+    font-size: 10px;
+    color: #3BA550;
+  }

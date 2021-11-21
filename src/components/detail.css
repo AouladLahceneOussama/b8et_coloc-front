@@ -1,0 +1,243 @@
+
+.profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px #4ACC64 solid;
+    padding: 10px;
+    border-radius:15px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.logo{
+    width: 60px;; 
+    height: 60px;
+     border-radius:90px;
+     border-spacing : 0px 0px;
+}
+.ligne{
+    border: 4px solid #3BA550;
+    border-radius: 5px;
+    width: 110%;
+    margin-top: -10px;
+}
+
+.tele{ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    word-Break: break-all
+   
+   
+}
+.tele i{
+    width:20px ;
+    height:20px;
+    background-color: #3BA550;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    margin-right:10px;
+    border-radius: 50%;
+    font-size: 10px;    
+}
+.localisation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    word-break: break-all;
+    
+    
+}
+.localisation i{
+    
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    margin-right:7px;
+   margin-left: 18px;
+    font-size: 10px;   
+}
+.localisation_info{
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding-right: 50px;
+   padding-left:60px ;
+   word-break: break-all;
+    padding-bottom:20px ;
+    
+    
+    
+
+}
+.localisation_info i{
+    color: white;
+}
+
+
+
+.info{
+    
+    width: 200px;
+    background-color: greenyellow;
+    margin-left: 30px;
+    flex-direction: row-reverse;
+   
+    
+    
+    
+}
+.detail{
+    margin-top: 20px;
+    border: 1px #B5B3B3 solid;
+    width: 60%;
+    border-radius:10px;
+    padding-left: 2%;
+    margin-left: 60px;
+  min-height: 100%;
+  box-shadow: 6px 12px #faf6f6;
+ 
+
+}
+.t{
+   
+  
+  
+    margin-left:20%;
+    text-align: left;
+}
+.p{
+font-size:20px;
+
+   
+
+}
+.button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   padding-bottom: 5%;
+    text-align: center;
+   
+}
+.description{
+    
+    
+    
+    border: 1px black solid;
+   background-color: #3BA550;
+    width: 94%;
+  
+    border-radius:10px;
+    margin-top: 20px;
+    
+}
+.demande{
+   
+    background-color: rgb(229, 234, 236);
+    margin-top: 20px;
+    width: 100%;
+    
+     
+    padding-left: 2%;
+     padding-bottom: 2%;
+    
+}
+.offer{
+   
+    margin-top: 20px;
+     width: 100%;
+   
+     padding-left: 2%;
+     padding-bottom: 2%;
+    
+}
+.hr{
+    border: 4px solid #3BA550;
+    border-radius: 5px;
+    width: 250px;
+    margin-left: 0%;
+    margin-top: -20px;
+}
+.form{
+    
+    justify-content: center;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 1050px){
+
+    .profil{
+        width: 80%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 3px solid red;
+    }
+    .detail{
+        margin-top: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 5px 10px #faf6f6;
+        width: 100%;
+        min-height: 100%;
+     
+    
+    }
+    .ligne{
+        display: none;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+    }
+    .localisation_info{
+        
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .localisation_info i{
+        color: white;
+    text-align: center;
+    line-height: 20px;
+    margin-right:7px;
+   margin-left: 30px;
+    font-size: 10px; 
+    }
+}
+@media screen and (max-width: 650px){
+    .profil{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: 3px solid rgb(17, 194, 47);
+        margin-top: "-7px";
+    }
+    .ligne{
+        display: flex;
+    }
+    .localisation_info{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       padding-right: 50px;
+       padding-left:10px ;
+       word-break: break-all;
+    
+    }
+    .detail{
+        margin-top: 20px;
+        box-shadow: 5px 10px #faf6f6;
+        width: 100%;
+        border-radius:10px;
+        padding-left: 2%;
+        min-height: 100%;
+    }
+}
